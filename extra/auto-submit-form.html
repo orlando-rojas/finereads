@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Static Template</title>
+</head>
+<body>
+<form method="GET">
+  <select class="js-autosubmit-form" name="sort">
+    <option value="relevance">relevance</option>
+    <option value="newest">newest</option>
+  </select>
+</form>
+
+<script>
+  function getNearestParentForm(node) {
+    if (node.tagName === "FORM" || node === null) {
+      return node;
+    }
+
+    return getNearestParentForm(node.parentElement);
+  }
+
+  document.querySelectorAll(".js-autosubmit-form").forEach(node => {
+    node.addEventListener("change", () => {
+      const form = getNearestParentForm(node);
+      form.submit()
+    });
+  });
+</script>
+</body>
+</html>
