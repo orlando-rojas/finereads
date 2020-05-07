@@ -12,3 +12,5 @@ gem "sinatra-contrib", "~> 2.0"
 gem "thin", "~> 1.7"
 
 gem "lazyrecord", "~> 0.0.2"
+
+gem "http", "~> 4.4"
