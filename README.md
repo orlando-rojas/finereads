@@ -2,9 +2,10 @@
 
 The finest personal book library in the web
 
-## Design
+## Resources
 
-[Here](https://www.figma.com/file/waNRFjYyJHmzYRKj1eGnfK/Finereads?node-id=0%3A1)
+- [Designs](https://www.figma.com/file/waNRFjYyJHmzYRKj1eGnfK/Finereads?node-id=0%3A1)
+- [Stories](./stories.md)
 
 ## Limitations
 
