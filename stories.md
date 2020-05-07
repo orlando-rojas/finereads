@@ -14,6 +14,18 @@ with using it.
 - Given that I am on the root url of the site "/"
 - Then I see [landing page](https://www.figma.com/file/waNRFjYyJHmzYRKj1eGnfK/Finereads?node-id=2%3A1)
 
+### User can see the navbar
+
+As an user, I want to see a navbar, so that I can nagivate the site.
+
+- Given that I am in any page that is not the landing page
+- Then I see the navbar
+- And I see the logo
+- And I see the link to "find books"
+- And I see the "my books" link
+- When I click the "find books" link, I am send to the search page
+- When I click the "my books" link, I am send to the my books page
+
 ### User can see search page
 
 As an User, I want to have a page to search for books for my library.

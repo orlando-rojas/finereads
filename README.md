@@ -1,6 +1,10 @@
-# finereads
+# Finereads
 
 The finest personal book library in the web
+
+## Design
+
+[Here](https://www.figma.com/file/waNRFjYyJHmzYRKj1eGnfK/Finereads?node-id=0%3A1)
 
 ## Limitations
 
