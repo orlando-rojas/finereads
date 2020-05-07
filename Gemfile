@@ -13,3 +13,4 @@ gem "sinatra-contrib", "~> 2.0"
 gem "http"
 gem 'guard'
 gem 'rack-livereload'
+gem "lazyrecord", "~> 0.0.2"
