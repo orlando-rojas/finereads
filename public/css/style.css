@@ -1,5 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Roboto+Slab&display=swap");
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*** NAVBAR STYLES ***/
+.navbar {
+  height: 80px;
+  /* Preguntar por la mejor forma de colocar las medidas */
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar__link-container {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  /* Preguntar sobre medidas relativas, si son necesarias */
+  width: 187px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar__link-container li {
+  display: inline-block;
+}
+
+.navbar__link {
+  color: #000;
+  font-size: 18px;
+  text-decoration: none;
 }
