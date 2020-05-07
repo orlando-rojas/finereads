@@ -3,6 +3,7 @@ require 'http'
 require 'guard'
 require 'rack-livereload'
 
+use Rack::LiveReload if development?
 
 get "/" do
 erb :index
