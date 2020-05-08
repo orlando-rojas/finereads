@@ -4,6 +4,13 @@ require 'http'
 require 'guard'
 require 'rack-livereload'
 
+@@key = "AIzaSyC8xY7H9mf9HVrAmFPcb66v9hWeW4asmBU"
+helpers do  
+    def get_books(params)
+        JSON.parse(HTTP.get("https://www.googleapis.com/books/v1/volumes?q=#{params}&key=#{@@key}").body)
+    end
+end
+
 use Rack::LiveReload if development?
 
 get "/" do
@@ -11,7 +18,10 @@ erb :index
 end
 
 get "/search" do
-erb :search
+    @search = params.fetch("q",'').split(" ").join("+")
+    puts "Hola #{@search}"
+    @books = @search.empty? ? [] : get_books(@search)
+    erb :search
 end
 
 get "/books/:book_id" do
