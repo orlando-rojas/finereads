@@ -1,8 +1,8 @@
 require 'sinatra'
 require "sinatra/reloader" if development?
 require 'http'
-#require 'guard'
-#require 'rack-livereload'
+require 'guard'
+require 'rack-livereload'
 
 @@key = "AIzaSyC8xY7H9mf9HVrAmFPcb66v9hWeW4asmBU"
 helpers do  
@@ -10,6 +10,8 @@ helpers do
         JSON.parse(HTTP.get("https://www.googleapis.com/books/v1/volumes?q=#{params}&key=#{@@key}").body)
     end
 end
+
+use Rack::LiveReload if development?
 
 get "/" do
 erb :index
