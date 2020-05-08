@@ -1,9 +1,49 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Roboto+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Roboto+Slab:wght@200;400&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  background: #fffaf0;
+}
+
+/*** LANDING STYLES ***/
+.landing {
+  /* Preguntar por la mejor forma de colocar las medidas */
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex: 1;
+}
+
+.landing__message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+}
+
+.landing__message h1,
+.landing__message p {
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  margin-bottom: 23px;
+}
+
+.landing__message span {
+  font-weight: 200;
+}
+
+.landing__img,
+.landing__message {
+  flex: 1 1 0;
 }
 
 /*** NAVBAR STYLES ***/
@@ -36,4 +76,22 @@
   color: #000;
   font-size: 18px;
   text-decoration: none;
+}
+
+/*** HELPERS ***/
+.button--yellow {
+  background: #f6ad55;
+  color: #1a202c;
+  padding: 8px 14px;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+}
+
+.button--yellow:hover {
+  color: #f6ad55;
+  background: #1a202c;
 }
