@@ -1,4 +1,5 @@
 require 'sinatra'
+require 'sinatra/reloader'
 require 'http'
 require 'guard'
 require 'rack-livereload'
@@ -14,7 +15,8 @@ erb :search
 end
 
 get "/books/:book_id" do
-erb :book_details
+  book = File.open('book.json'){|f|JSON.parse(f.read)}
+  erb :book_details, locals: {book:book}
 end
 
 get "/books" do
