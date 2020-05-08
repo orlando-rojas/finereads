@@ -1,0 +1,8 @@
+<%@my_books.each do |book|%>
+    <img src="<%=book.img_route%>">
+    <p><%=book.title%></p>
+    <p><%=book.author %></p>
+    <p><%=book.status %></p>
+    <p><%=book.date_added %></p>
+    <p><%=book.notes %></p>
+<%end %>

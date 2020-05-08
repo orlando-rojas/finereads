@@ -4,8 +4,8 @@
         <% if book["volumeInfo"]["imageLinks"] != nil%>
             <div class="book-wrapper">
                 <img class="book-img" src="<%= book["volumeInfo"]["imageLinks"]["thumbnail"] %>">
-                <a href="#" class="want-read"> Want to Read </a>
-                <a href="#" class="mark-read"> Mark as read </a>
+                <a href="/search/<%=book["id"]%>&want" class="want-read"> Want to Read </a>
+                <a href="/search/<%=book["id"]%>&read" class="mark-read"> Mark as read </a>
             </div>
         <%end%>
     <%end%>
