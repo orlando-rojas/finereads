@@ -7,4 +7,9 @@
 </div>
 <%if @books != []%>
     <%=erb :"_books_list"%>
+<%else%>
+    <div class="search-empty">
+        <img src="images/icon-book.png">
+        <p class="waiting">Waiting for a query</p>  
+    </div>
 <%end%>
