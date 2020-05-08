@@ -1,0 +1,26 @@
+<article class='book-details'>
+    <div class='book-details-img'>
+        <img src=<%= book['volumeInfo']['imageLinks']['small'] %> />
+    </div>
+    <div class='book-details-info'>
+        <h1 class='book-details-title'><%= book['volumeInfo']['title'] %> </h1>
+        <span class='book-details-author'>
+            by <%= book['volumeInfo']['authors'].join(', ') %>
+        </span>
+        
+        <p class='book-details-description'>
+            <%= book['volumeInfo']['description'] %> 
+        </p>
+        <%=
+        saleInfo = book['saleInfo']
+        onSale = saleInfo['saleability'] == "FOR_SALE"
+        buyLink = saleInfo.fetch('buyLink', '#')
+        pricing = saleInfo.fetch('retailPrice',{}).values.join(' ')
+        if onSale
+            %[<a class="btn-buy" href="#{buyLink}">BUY #{pricing}</a>]
+        else
+            %[<a class="btn-buy btn-buy--unavailable" href="#{buyLink}">Unavailable</a>]
+        end
+        %> 
+    </div>
+</article>
