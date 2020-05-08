@@ -1,0 +1,10 @@
+<div class="search-div">
+    <h2>Find next you next book to read</h2>
+    <form method="get" action="/search" class="search-form">
+        <input type="text" name="q" id="q" class="searchbox" placeholder="Search a book...">
+        <input type="submit" class="submit" value="a">
+    <form>
+</div>
+<%if @books != []%>
+    <%=erb :"_books_list"%>
+<%end%>
