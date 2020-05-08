@@ -1,0 +1,72 @@
+.books {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.book-wrapper {
+    background: #D8D8D8;
+    padding: 30px;
+    margin: 12px;
+    width: 202px;
+    height: 326px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.book-img {
+    width: 153px;
+    height: 230px;
+}
+
+.want-read {
+    text-align: center;
+    text-decoration: none;
+    background: #38A169;
+    color: #fff;
+    font-size: 12px;
+    line-height: 16px;
+    padding: 5px 15px;
+    margin: 12px 0;
+}
+
+.mark-read {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 16px;
+    color: #2B6CB0;
+}
+
+.search-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    margin-top: 70px;
+}
+
+.seach-div h2{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+}
+
+.searchbox{
+    border: none;
+    margin-top: 35px;
+    height: 40px;
+    width: 515px;
+    box-shadow: -4px 10px 5px 0px rgba(0,0,0,0.1);
+}
+
+.submit {
+    background: #F6AD55;
+    width: 40px;
+    height: 40px;
+}

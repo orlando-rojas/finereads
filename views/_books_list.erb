@@ -1,0 +1,12 @@
+<div class="books">
+    <%@books["items"].each_with_index do |book, index|%>
+        <% break if index==8 %>
+        <% if book["volumeInfo"]["imageLinks"] != nil%>
+            <div class="book-wrapper">
+                <img class="book-img" src="<%= book["volumeInfo"]["imageLinks"]["thumbnail"] %>">
+                <a href="#" class="want-read"> Want to Read </a>
+                <a href="#" class="mark-read"> Mark as read </a>
+            </div>
+        <%end%>
+    <%end%>
+</div>
