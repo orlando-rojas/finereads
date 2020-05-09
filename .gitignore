@@ -57,3 +57,4 @@ build-iPhoneSimulator/
 
 .idea
 .DS_Store
+*.pstore
