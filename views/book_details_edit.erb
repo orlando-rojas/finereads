@@ -1,0 +1,28 @@
+<article class="book-details">
+  <div class="book-details-img">
+    <img width="100%" src=<%= book['volumeInfo']['imageLinks']['thumbnail'] %> />
+  </div>
+  <div class="book-details-info">
+    <h1 class="book-details-title"><%= book['volumeInfo']['title'] %></h1>
+    <span class="book-details-author">
+      by <%= book['volumeInfo']['authors'].join(', ') %>
+    </span>
+    <form class="book-edit-form" method="POST">
+        <div>
+            <label for="status">Status</label>
+            <br />
+            <select id="status" name="status">
+              <option value="want">Want to read</option>
+              <option value="reading">Reading</option>
+              <option value="read">Read</option>
+            </select>
+        </div>
+        <div>
+            <label for="note">Note</label>
+            <br>
+            <textarea rows="10" id="note" name="note"><%= user_data.notes %></textarea>
+        </div>
+        <button type="submit">Save</button>
+      </div>
+    </form>
+</article>
