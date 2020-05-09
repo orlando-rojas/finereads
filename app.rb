@@ -17,7 +17,6 @@ helpers do
     def get_book(id)
         JSON.parse(HTTP.get("https://www.googleapis.com/books/v1/volumes/#{id}&key=#{@@key}").body)
     end
-end
 
     def get_specific_book(id)
         JSON.parse(HTTP.get("https://www.googleapis.com/books/v1/volumes/#{id}?key=#{@@key}").body)

@@ -54,7 +54,7 @@
         <td><%= book.date_added %></td>
         <%# <td><%= book.notes %>   
         <td><a href="/books/<%= book.id %>/edit"><img src="images/edit-img.png" /></a></td>
-        <td><a href="#"><img src="images/delete-img.png" /></a></td>
+        <td><a href="/books/<%= book.id %>/delete"><img src="images/delete-img.png" /></a></td>
       </tr>
     <% end %>
   </tbody> 
