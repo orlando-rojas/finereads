@@ -1,7 +1,7 @@
 .book-details {
   margin: 0 auto;
+  max-width: 1024px;
   display: flex;
-  justify-content: center;
 }
 
 .book-details-img {
@@ -48,9 +48,9 @@
   line-height: 25px;
 }
 
-.btn-buy--unavailable{
-    background: #bbb;
-    cursor: not-allowed;
+.btn-buy--unavailable {
+  background: #bbb;
+  cursor: not-allowed;
 }
 
 .btn-buy::after {
