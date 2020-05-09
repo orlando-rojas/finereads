@@ -1,7 +1,7 @@
 .book-details {
   margin: 0 auto;
+  max-width: 1024px;
   display: flex;
-  justify-content: center;
 }
 
 .book-details-img {
