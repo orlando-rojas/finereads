@@ -1,12 +1,12 @@
 require 'sinatra'
 require "sinatra/reloader" if development?
 require 'http'
-#require 'guard'
-#require 'rack-livereload'
+require 'guard'
+require 'rack-livereload'
 require 'Lazyrecord'
 require 'date'
 require_relative 'model/Book'
-#use Rack::LiveReload if development?
+use Rack::LiveReload if development?
 
 use Rack::LiveReload if development?
 @@key = "AIzaSyC8xY7H9mf9HVrAmFPcb66v9hWeW4asmBU"
