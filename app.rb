@@ -1,12 +1,13 @@
 require 'sinatra'
 require 'sinatra/reloader'
 require 'http'
-#require 'guard'
-#require 'rack-livereload'
+require 'guard'
+require 'rack-livereload'
 require 'Lazyrecord'
 require 'date'
 require_relative 'model/Book'
-#use Rack::LiveReload if development?
+
+use Rack::LiveReload if development?
 
 @@key = "AIzaSyC8xY7H9mf9HVrAmFPcb66v9hWeW4asmBU"
 helpers do  
@@ -31,8 +32,9 @@ helpers do
     end
 end
 
+
 get "/" do
-erb :index
+    erb :index
 end
 
 get "/search" do
@@ -63,3 +65,8 @@ get "/books/:book_id/edit" do
 erb :book_details_edit
 end
 
+get "/books/:book_id/delete" do
+    book_id = params[:"book_id"].to_i
+    Book.delete(book_id)
+    redirect 'books'
+end

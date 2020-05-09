@@ -8,6 +8,7 @@
 
 body {
   background: #fffaf0;
+  font-family: Nunito;
 }
 
 /*** LANDING STYLES ***/
@@ -94,4 +95,74 @@ body {
 .button--yellow:hover {
   color: #f6ad55;
   background: #1a202c;
+}
+
+.my-books {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 60px;
+}
+
+.my-books_title {
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 49px;
+  align-self: flex-start;
+  margin-bottom: 25px;
+}
+
+.my-books_table {
+  border-collapse: collapse;
+  width: 70%;
+  text-align: left;
+}
+
+.my-books_table th{
+  font-size: 14px;
+  line-height: 19px;
+  color: #2D3748;
+}
+
+.my-books_table-img {
+  width: 70px;
+  height: 105px;
+  margin-top: 12px;
+  margin-bottom: 19px;
+}
+
+.my-books_table td {
+  font-size: 12px;
+  line-height: 16px;
+  color: #1A202C;
+}
+
+
+
+.my-books_table tr {
+  border-top: 1px solid rgba(113, 128, 150, 0.8);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.table-head {
+  border-top: none !important;
+}
+
+.my-books_table-title {
+  font-size: 14px !important;
+  color: #ED8936 !important;
+  max-width: 115px;
+}
+
+.my-books_table-author {
+  max-width: 71px;
+}
+
+.date_added {
+  margin-right: 19px;
 }
