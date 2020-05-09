@@ -13,6 +13,9 @@ use Rack::LiveReload if development?
 helpers do  
     def get_books(params)
         JSON.parse(HTTP.get("https://www.googleapis.com/books/v1/volumes?q=#{params}&key=#{@@key}").body)
+    end   
+    def get_book(id)
+        JSON.parse(HTTP.get("https://www.googleapis.com/books/v1/volumes/#{id}&key=#{@@key}").body)
     end
 
     def get_specific_book(id)
