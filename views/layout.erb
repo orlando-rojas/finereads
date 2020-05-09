@@ -6,7 +6,7 @@
     <title>Finereads</title>
 </head>
 <body>
-    <% if request.path_info !="/" %>
+    <% unless request.path_info =="/" %>
         <%= erb :navbar%>
     <%end%>
     <%= yield %>
