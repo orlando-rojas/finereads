@@ -1,36 +1,11 @@
 require 'sinatra'
 require 'sinatra/reloader'
 require 'http'
-require 'guard'
 require 'rack-livereload'
 require 'lazyrecord'
-require 'date'
 require_relative 'model/Book'
 
 use Rack::LiveReload if development?
-@@key = "AIzaSyC8xY7H9mf9HVrAmFPcb66v9hWeW4asmBU"
-helpers do  
-    def get_books(params)
-        JSON.parse(HTTP.get("https://www.googleapis.com/books/v1/volumes?q=#{params}&key=#{@@key}").body)
-    end
-      
-    def get_book(id)
-        JSON.parse(HTTP.get("https://www.googleapis.com/books/v1/volumes/#{id}&key=#{@@key}").body)
-    end
-
-    def get_specific_book(id)
-        JSON.parse(HTTP.get("https://www.googleapis.com/books/v1/volumes/#{id}?key=#{@@key}").body)
-    end
-
-    def get_params(id)
-        book_json = get_specific_book(id)
-        arr = {}
-        arr["img"] = book_json["volumeInfo"]["imageLinks"]["thumbnail"]
-        arr["title"] = book_json["volumeInfo"]["title"]
-        arr["author"] = book_json["volumeInfo"]["authors"]
-        arr
-    end
-end
 
 @@key = "AIzaSyC8xY7H9mf9HVrAmFPcb66v9hWeW4asmBU"
 helpers do
@@ -50,6 +25,7 @@ helpers do
   def get_params(id)
     book_json = get_specific_book(id)
     arr = {}
+    arr["id"] = book_json["id"]
     arr["img"] = book_json["volumeInfo"]["imageLinks"]["thumbnail"]
     arr["title"] = book_json["volumeInfo"]["title"]
     arr["author"] = book_json["volumeInfo"]["authors"]

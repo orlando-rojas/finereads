@@ -3,7 +3,9 @@
         <% break if index==8 %>
         <% if book["volumeInfo"]["imageLinks"] != nil%>
             <div class="book-wrapper">
+                <a href="/books/<%=book["id"]%>" class="want-read">
                 <img class="book-img" src="<%= book["volumeInfo"]["imageLinks"]["thumbnail"] %>">
+                </a>
                 <a href="/search/<%=book["id"]%>&want" class="want-read"> Want to Read </a>
                 <a href="/search/<%=book["id"]%>&read" class="mark-read"> Mark as read </a>
             </div>
