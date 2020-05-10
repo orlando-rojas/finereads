@@ -48,9 +48,9 @@
   line-height: 25px;
 }
 
-.btn-buy--unavailable{
-    background: #bbb;
-    cursor: not-allowed;
+.btn-buy--unavailable {
+  background: #bbb;
+  cursor: not-allowed;
 }
 
 .btn-buy::after {

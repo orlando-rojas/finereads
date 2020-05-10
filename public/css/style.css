@@ -17,6 +17,7 @@ body {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
+  height: 100vh;
   display: flex;
   flex: 1;
 }
@@ -83,7 +84,7 @@ body {
 .button--yellow {
   background: #f6ad55;
   color: #1a202c;
-  padding: 8px 14px;
+  padding: 12.5px;
   font-family: Nunito;
   font-style: normal;
   font-weight: normal;
@@ -121,10 +122,10 @@ body {
   text-align: left;
 }
 
-.my-books_table th{
+.my-books_table th {
   font-size: 14px;
   line-height: 19px;
-  color: #2D3748;
+  color: #2d3748;
 }
 
 .my-books_table-img {
@@ -137,10 +138,8 @@ body {
 .my-books_table td {
   font-size: 12px;
   line-height: 16px;
-  color: #1A202C;
+  color: #1a202c;
 }
-
-
 
 .my-books_table tr {
   border-top: 1px solid rgba(113, 128, 150, 0.8);
@@ -155,7 +154,7 @@ body {
 
 .my-books_table-title {
   font-size: 14px !important;
-  color: #ED8936 !important;
+  color: #ed8936 !important;
   max-width: 115px;
 }
 

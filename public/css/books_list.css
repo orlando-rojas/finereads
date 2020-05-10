@@ -1,88 +1,92 @@
 .books {
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .book-wrapper {
-    background: #D8D8D8;
-    padding: 30px;
-    margin: 12px;
-    width: 202px;
-    height: 326px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: Nunito;
+  background: #d8d8d8;
+  padding: 30px;
+  margin: 12px;
+  width: 202px;
+  height: 326px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Nunito;
 }
 
 .book-img {
-    width: 153px;
-    height: 230px;
+  width: 153px;
+  height: 230px;
 }
 
 .want-read {
-    text-align: center;
-    text-decoration: none;
-    background: #38A169;
-    color: #fff;
-    font-size: 12px;
-    line-height: 16px;
-    padding: 5px 15px;
-    margin: 12px 0;
+  text-align: center;
+  text-decoration: none;
+  background: #38a169;
+  color: #fff;
+  font-size: 12px;
+  line-height: 16px;
+  padding: 5px 15px;
+  margin: 12px 0;
 }
 
 .mark-read {
-    text-decoration: none;
-    font-size: 12px;
-    line-height: 16px;
-    color: #2B6CB0;
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 16px;
+  color: #2b6cb0;
 }
 
 .search-div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 40px;
-    margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  margin-top: 70px;
 }
 
-
-.search-div h2{
-    font-family: Nunito;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 33px;
+.search-div h2 {
+  font-family: Nunito;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
 }
 
-.searchbox{
-    border: none;
-    margin-top: 35px;
-    height: 40px;
-    width: 515px;
-    box-shadow: -4px 10px 5px 0px rgba(0,0,0,0.1);
+.searchbox {
+  border: none;
+  margin-top: 35px;
+  height: 40px;
+  width: 515px;
+  box-shadow: -4px 10px 5px 0px rgba(0, 0, 0, 0.1);
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  padding: 10px 12px;
 }
 
 .submit {
-    background: #F6AD55;
-    width: 40px;
-    height: 40px;
+  background: #f6ad55;
+  width: 40px;
+  height: 40px;
 }
 
 .search-empty {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .waiting {
-    margin-top: 20px;
-    font-family: Nunito;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 27px;
+  margin-top: 20px;
+  font-family: Nunito;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 27px;
 }
